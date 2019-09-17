@@ -1,26 +1,27 @@
 import React from 'react';
 
 class NationalPark extends React.Component {
+  state = { name: "" }
 
   render() {
     return (
       <div className="ui card">
         <div className="image">
-          <img src="arches.jpg" alt="National Park"/>
+          <img src={this.props.image} alt="National Park"/>
         </div>
         <div className="content">
-          <a className="header" href="/park">Utah</a>
+          <a className="header" href="/park">{this.props.name}</a>
           <div className="meta">
-            <span className="date">Joined in 2013</span>
+            <span className="date">Est. {this.props.est}</span>
           </div>
           <div className="description">
-            Kristy is an art director living in New York.
+            {this.props.description}
           </div>
         </div>
         <div className="extra content">
           <a href="/idk">
             <i className="user icon"></i>
-            22 Friends
+            {this.props.webcam_count} Webcam(s)
           </a>
         </div>
       </div>
