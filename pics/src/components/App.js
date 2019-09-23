@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 import ImageList from './ImageList';
 
 class App extends React.Component {
-  state = { images: [] }
+  state = { images: [] };
 
   onSearchSubmit = async term => {
     const response = await Unsplash.get('/search/photos', {
@@ -12,7 +12,7 @@ class App extends React.Component {
     });
 
     this.setState({ images: response.data.results })
-  }
+  };
 
   render() {
     return (
