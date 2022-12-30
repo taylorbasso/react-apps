@@ -1,6 +1,5 @@
 import React from 'react';
-import Webcam from "./Webcam";
-import NationalPark from "./parks/NationalPark";
+import NationalPark from "./NationalPark";
 
 class NationalParkList extends React.Component {
 
@@ -128,9 +127,6 @@ class NationalParkList extends React.Component {
   render() {
     return (
       <div className="ui three column grid cards national-parks">
-        {/*<ArchesNP callback={this.state.parkSelectedCallback}/>*/}
-        {/*<CanyonlandsNP callback={this.state.parkSelectedCallback}/>*/}
-        {/*<GlacierNP callback={this.state.parkSelectedCallback}/>*/}
         {this.getNationalParks().map((nationalPark) => (
           <NationalPark key={nationalPark.name} nationalPark={nationalPark} callback={this.state.parkSelectedCallback}/>
         ))}
