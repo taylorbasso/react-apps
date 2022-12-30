@@ -12,29 +12,26 @@ class NationalPark extends React.Component {
 
   render() {
     return (
-      <div className="ui column">
-        <div className="ui fluid card">
-          <div className="image">
-            <img src={this.state.image} alt="National Park" onClick={() => this.props.callback(this.state.name, this.state.webcams)}/>
+      <div className="ui link fluid card national-park" onClick={() => this.props.callback(this.state.name, this.state.webcams)}>
+        <div className="image">
+          <img src={this.state.image} alt="National Park"/>
+        </div>
+        <div className="content">
+          <div className="header"
+             onClick={() => this.props.callback(this.state.name, this.state.webcams)}>{this.state.name}</div>
+          <div className="meta">
+            <span className="date">Est. {this.state.est}</span>
           </div>
-          <div className="content">
-            <a className="header" onClick={() => this.props.callback(this.state.name, this.state.webcams)}>{this.state.name}</a>
-            <div className="meta">
-              <span className="date">Est. {this.state.est}</span>
-            </div>
-            <div className="description">
-              {this.state.description}
-            </div>
-          </div>
-          <div className="extra content">
-            <a href="/idk">
-              <i className="user icon"></i>
-              {this.state.webcam_count} Webcam(s)
-            </a>
+          <div className="description">
+            {this.state.description}
           </div>
         </div>
+        <div className="extra content">
+          <i className="camera icon"></i>
+          {this.state.webcams.length} Webcam(s)
+        </div>
       </div>
-      );
+    );
   }
 }
 

@@ -24,16 +24,24 @@ class App extends React.Component {
     this.setState({webcams: webcams})
   };
 
+  reset() {
+    console.log("Resetting");
+    this.setState({nationalParkList: true});
+    this.setState({webcams: []});
+  }
+
   render() {
     if (this.state.nationalParkList) {
       return (
-        <div className="ui container">
+        <div className="ui container" style={{padding: "30px"}}>
+          <button className="ui primary button" style={{marginBottom: "30px"}} onClick={() => this.setState({nationalParkList: true})}>Home</button>
           <NationalParkList parkSelectedCallback={this.parkSelectedCallback}/>
         </div>
       );
     } else {
       return (
-        <div className="ui container">
+        <div className="ui container" style={{padding: "30px"}}>
+          <button className="ui primary button" style={{marginBottom: "30px"}} onClick={() => this.setState({nationalParkList: true})}>Home</button>
           <WebcamList webcams={this.state.webcams}/>
         </div>
       );
