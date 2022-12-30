@@ -5,30 +5,29 @@ class NationalPark extends React.Component {
     super(props);
 
     this.state = {
-      callback: props.callback,
-      name: "default nameee"
+      callback: props.callback
     };
   }
 
   render() {
     return (
-      <div className="ui link fluid card national-park" onClick={() => this.props.callback(this.state.name, this.state.webcams)}>
+      <div className="ui link fluid card national-park" onClick={() => this.state.callback(this.props.nationalPark.name, this.props.nationalPark.webcams)}>
         <div className="image">
-          <img src={this.state.image} alt="National Park"/>
+          <img src={this.props.nationalPark.image} alt="National Park"/>
         </div>
         <div className="content">
           <div className="header"
-             onClick={() => this.props.callback(this.state.name, this.state.webcams)}>{this.state.name}</div>
+             onClick={() => this.state.callback(this.props.nationalPark.name, this.props.nationalPark.webcams)}>{this.props.nationalPark.name}</div>
           <div className="meta">
-            <span className="date">Est. {this.state.est}</span>
+            <span className="date">Est. {this.props.nationalPark.est}</span>
           </div>
           <div className="description">
-            {this.state.description}
+            {this.props.nationalPark.description}
           </div>
         </div>
         <div className="extra content">
           <i className="camera icon"></i>
-          {this.state.webcams.length} Webcam(s)
+          {this.props.nationalPark.webcams.length} Webcam(s)
         </div>
       </div>
     );
