@@ -18,20 +18,10 @@ class App extends React.Component {
     console.log("Component Did Update")
   }
 
-  webcamMap(name) {
-    switch (name) {
-      case "Arches":
-        return [{name: "Entrance", url: "https://www.nps.gov/webcams-arch/arch_traffic.jpg"}];
-      default:
-        console.log("Error finding matching webcams for National park")
-        return [];
-    }
-  }
-
-  parkSelectedCallback = (name) => {
+  parkSelectedCallback = (name, webcams) => {
     console.log(name + " park was clicked");
     this.setState({nationalParkList: false});
-    this.setState( {webcams: this.webcamMap(name)});
+    this.setState({webcams: webcams})
   };
 
   render() {

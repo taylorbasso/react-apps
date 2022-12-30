@@ -5,7 +5,8 @@ class NationalPark extends React.Component {
     super(props);
 
     this.state = {
-      callback: props.callback
+      callback: props.callback,
+      name: "default nameee"
     };
   }
 
@@ -14,21 +15,21 @@ class NationalPark extends React.Component {
       <div className="ui column">
         <div className="ui fluid card">
           <div className="image">
-            <img src={this.props.image} alt="National Park" onClick={() => this.props.callback(this.props.name)}/>
+            <img src={this.state.image} alt="National Park" onClick={() => this.props.callback(this.state.name, this.state.webcams)}/>
           </div>
           <div className="content">
-            <a className="header" onClick={() => this.props.callback(this.props.name)}>{this.props.name}</a>
+            <a className="header" onClick={() => this.props.callback(this.state.name, this.state.webcams)}>{this.state.name}</a>
             <div className="meta">
-              <span className="date">Est. {this.props.est}</span>
+              <span className="date">Est. {this.state.est}</span>
             </div>
             <div className="description">
-              {this.props.description}
+              {this.state.description}
             </div>
           </div>
           <div className="extra content">
             <a href="/idk">
               <i className="user icon"></i>
-              {this.props.webcam_count} Webcam(s)
+              {this.state.webcam_count} Webcam(s)
             </a>
           </div>
         </div>
