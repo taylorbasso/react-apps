@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {nationalParkList: true, webcams: []};
+    this.state = {webcams: []};
   }
 
   componentDidMount() {
@@ -20,33 +20,43 @@ class App extends React.Component {
 
   parkSelectedCallback = (name, webcams) => {
     console.log(name + " park was clicked");
-    this.setState({nationalParkList: false});
     this.setState({webcams: webcams})
   };
 
   reset() {
-    console.log("Resetting");
-    this.setState({nationalParkList: true});
     this.setState({webcams: []});
   }
 
   render() {
-    if (this.state.nationalParkList) {
-      return (
-        <div className="ui container" style={{padding: "30px"}}>
-          <button className="ui primary button" style={{marginBottom: "30px"}} onClick={() => this.setState({nationalParkList: true})}>Home</button>
-          <NationalParkList parkSelectedCallback={this.parkSelectedCallback}/>
-        </div>
-      );
-    } else {
-      return (
-        <div className="ui container" style={{padding: "30px"}}>
-          <button className="ui primary button" style={{marginBottom: "30px"}} onClick={() => this.setState({nationalParkList: true})}>Home</button>
-          <WebcamList webcams={this.state.webcams}/>
-        </div>
-      );
+    let component = <NationalParkList parkSelectedCallback={this.parkSelectedCallback}/>;
+    if (this.state.webcams.length > 0) {
+      component = <WebcamList webcams={this.state.webcams}/>
     }
-
+    return (
+      <div className="ui container" style={{padding: "30px"}}>
+        <h2 className="ui center aligned icon header">
+          <i className="image outline icon"></i>
+          <div className="content">
+            National Park Webcams
+            <div className="sub header">Hello </div>
+          </div>
+        </h2>
+        <div className="ui inverted menu" style={{marginBottom: "30px"}}>
+          <div className="ui container">
+            <a className="active header item" href="/" onClick={() => this.reset()}>
+              <i className="home icon"></i> Home
+            </a>
+            <a className="item" href="/slideshow">
+              <i className="caret square right icon"></i> Slideshow
+            </a>
+            <a className="item" href="/random">
+              <i className="random icon"></i> Random
+            </a>
+          </div>
+        </div>
+        {component}
+      </div>
+    );
   }
 }
 

@@ -12,7 +12,12 @@ function NationalPark(props) {
         <div className="header"
              onClick={() => props.callback(props.nationalPark.name, props.nationalPark.webcams)}>{props.nationalPark.name}</div>
         <div className="meta">
-          <span className="date">Est. {props.nationalPark.est}</span>
+          <span className="state">{props.nationalPark.state}</span>
+          <span className="date"></span>
+        </div>
+        <div className="meta">
+          <span className="stateDate">Est. {props.nationalPark.est}</span>
+          <span className="date"></span>
         </div>
         <div className="description">
           {props.nationalPark.description}
