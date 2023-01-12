@@ -1,7 +1,6 @@
 import React from 'react';
 
 function NationalPark(props) {
-  console.log(props)
   return (
     <div className="ui link fluid card national-park"
          onClick={() => props.callback(props.nationalPark.name, props.nationalPark.webcams)}>

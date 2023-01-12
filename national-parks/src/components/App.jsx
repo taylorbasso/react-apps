@@ -1,13 +1,14 @@
 import React from 'react';
 import NationalParkList from './NationalParkList';
 import WebcamList from "./WebcamList";
+import RandomWebcamSlideshow from "./Random";
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
 
-    this.state = {webcams: []};
+    this.state = {webcams: [], random: false};
   }
 
   componentDidMount() {
@@ -23,6 +24,11 @@ class App extends React.Component {
     this.setState({webcams: webcams})
   };
 
+  randomSelectedCallback = () => {
+    console.log("Random Selected");
+    this.setState({random: true})
+  }
+
   reset() {
     this.setState({webcams: []});
   }
@@ -30,7 +36,11 @@ class App extends React.Component {
   render() {
     let component = <NationalParkList parkSelectedCallback={this.parkSelectedCallback}/>;
     if (this.state.webcams.length > 0) {
+      console.log("WebcamsList is component");
       component = <WebcamList webcams={this.state.webcams}/>
+    } else if (this.state.random === true) {
+      console.log("Random Slideshow is component");
+      component = <RandomWebcamSlideshow />
     }
     return (
       <div className="ui container" style={{padding: "30px"}}>
@@ -46,12 +56,12 @@ class App extends React.Component {
             <a className="active header item" href="/" onClick={() => this.reset()}>
               <i className="home icon"></i> Home
             </a>
-            <a className="item" href="/slideshow">
-              <i className="caret square right icon"></i> Slideshow
+            <a className="item" onClick={() => this.randomSelectedCallback()}>
+              <i className="caret square right icon"></i> Random Slideshow
             </a>
-            <a className="item" href="/random">
-              <i className="random icon"></i> Random
-            </a>
+            {/*<a className="item" href="/random">*/}
+            {/*  <i className="random icon"></i> Random*/}
+            {/*</a>*/}
           </div>
         </div>
         {component}
