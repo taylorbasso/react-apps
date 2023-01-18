@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NationalPark(props) {
+export default function NationalPark(props) {
   return (
     <div className="ui link fluid card national-park"
          onClick={() => props.callback(props.nationalPark.name, props.nationalPark.webcams)}>
@@ -29,5 +29,3 @@ function NationalPark(props) {
     </div>
   );
 }
-
-export default NationalPark;

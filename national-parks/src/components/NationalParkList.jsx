@@ -12,10 +12,13 @@ class NationalParkList extends React.Component {
 
   render() {
     return (<div className="ui three column grid cards national-parks">
-      {getNationalParkWebcamData().map((nationalPark) => (<NationalPark key={nationalPark.name} nationalPark={nationalPark}
-                                                                        callback={this.state.parkSelectedCallback}/>))}
+      {getNationalParkWebcamData()
+        .map((nationalPark) => (
+          <NationalPark key={nationalPark.name} nationalPark={nationalPark}
+                        callback={this.state.parkSelectedCallback}/>)
+        )}
     </div>);
   }
 }
 
-export default NationalParkList
+export default NationalParkList;

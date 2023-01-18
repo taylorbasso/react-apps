@@ -1,7 +1,8 @@
 import React from 'react';
 import NationalParkList from './NationalParkList';
 import WebcamList from "./WebcamList";
-import RandomWebcamSlideshow from "./Random";
+import RandomWebcam from "./RandomWebcam";
+import Slideshow from "./Slideshow";
 
 class App extends React.Component {
 
@@ -26,11 +27,16 @@ class App extends React.Component {
 
   randomSelectedCallback = () => {
     console.log("Random Selected");
-    this.setState({random: true})
+    this.setState({random: true, slideshow: false, webcams: []})
+  }
+
+  slideshowSelectedCallback = () => {
+    console.log("Slideshow Selected");
+    this.setState({random: false, slideshow: true, webcams: []})
   }
 
   reset() {
-    this.setState({webcams: []});
+    this.setState({webcams: [], slideshow: false, random: false});
   }
 
   render() {
@@ -39,8 +45,11 @@ class App extends React.Component {
       console.log("WebcamsList is component");
       component = <WebcamList webcams={this.state.webcams}/>
     } else if (this.state.random === true) {
-      console.log("Random Slideshow is component");
-      component = <RandomWebcamSlideshow />
+      console.log("Random is component");
+      component = <RandomWebcam/>
+    } else if (this.state.slideshow === true) {
+      console.log("Slideshow is component");
+      component = <Slideshow/>
     }
     return (
       <div className="ui container" style={{padding: "30px"}}>
@@ -48,21 +57,22 @@ class App extends React.Component {
           <i className="image outline icon"></i>
           <div className="content">
             National Park Webcams
-            <div className="sub header">Hello </div>
+            {/*<div className="sub header">Hello </div>*/}
           </div>
         </h2>
-        <div className="ui inverted menu" style={{marginBottom: "30px"}}>
-          <div className="ui container">
-            <a className="active header item" href="/" onClick={() => this.reset()}>
-              <i className="home icon"></i> Home
-            </a>
-            <a className="item" onClick={() => this.randomSelectedCallback()}>
-              <i className="caret square right icon"></i> Random Slideshow
-            </a>
-            {/*<a className="item" href="/random">*/}
-            {/*  <i className="random icon"></i> Random*/}
-            {/*</a>*/}
-          </div>
+        <div className="ui center aligned" style={{marginBottom: "30px"}}>
+          <button className="ui labeled icon primary button" onClick={() => this.reset()}>
+            <i className="home icon"></i>
+            Home
+          </button>
+          <button className="ui labeled icon button" onClick={() => this.randomSelectedCallback()}>
+            <i className="image icon"></i>
+            Random
+          </button>
+          <button className="ui labeled icon button" onClick={() => this.slideshowSelectedCallback()}>
+            <i className="video icon"></i>
+            Slideshow
+          </button>
         </div>
         {component}
       </div>

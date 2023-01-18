@@ -2,7 +2,7 @@ import React from 'react';
 import {getRandomWebcam} from "../webcamList";
 import Webcam from "./Webcam";
 
-function RandomWebcamSlideshow(props) {
+export default function RandomWebcam(props) {
   let randomWebcam = getRandomWebcam();
 
   return (
@@ -16,5 +16,3 @@ function RandomWebcamSlideshow(props) {
     </div>
   );
 }
-
-export default RandomWebcamSlideshow;

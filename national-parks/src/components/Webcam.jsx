@@ -1,7 +1,6 @@
 import React from 'react';
 
-function Webcam(props) {
-
+export default function Webcam(props) {
   return (
     <div key={props.webcam.title} className="ui fluid card">
       <div className="image">
@@ -25,5 +24,3 @@ function Webcam(props) {
     </div>
   )
 }
-
-export default Webcam;

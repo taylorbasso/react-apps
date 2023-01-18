@@ -1,5 +1,22 @@
 import {shuffleArray} from "./util";
 
+export const getRandomWebcam = () => {
+  // first get all the webcams into a flattened array
+  let array = getNationalParkWebcamData()
+    .map((np) =>
+      np.webcams
+        .map((webcam) => ({
+          parkName: np.name, // putting this in here so that we can show the np name on the random webcam
+          title: webcam.title,
+          url: webcam.url,
+          description: webcam.description
+        }))
+    ).flat();
+
+  // now shuffle it and return the first entry after shuffling
+  return shuffleArray(array)[0];
+}
+
 export const getNationalParkWebcamData = () => {
   return [{
     name: "Acadia",
@@ -367,21 +384,4 @@ export const getNationalParkWebcamData = () => {
       description: ""
     }]
   }]
-}
-
-export const getRandomWebcam = () => {
-  // first get all the webcams into a flattened array
-  let array = getNationalParkWebcamData()
-    .map((np) =>
-      np.webcams
-        .map((webcam) => ({
-          parkName: np.name, // putting this in here so that we can show the np name on the random webcam
-          title: webcam.title,
-          url: webcam.url,
-          description: webcam.description
-        }))
-    ).flat();
-
-  // now shuffle it and return the first entry after shuffling
-  return shuffleArray(array)[0];
 }
