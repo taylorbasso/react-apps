@@ -373,15 +373,300 @@ export const getNationalParkWebcamData = () => {
       description: "This is the view looking north from the Kohm Yah-mah-nee Visitor Center at Lassen Volcanic National Park. The peak to the left is Mt. Diller and Pilot Pinnacle sits to its right. On cool days, it is possible to see steam rising from the Sulphur Works hydrothermal area."
     }]
   }, {
-    name: "dont",
-    image: "use",
-    est: "",
-    description: "",
-    state: "",
+    name: "Mammoth Cave",
+    image: "mammoth-cave.jpeg",
+    est: "July 1, 1941",
+    description: "Rolling hills, deep river valleys, and the world's longest known cave system. Mammoth Cave National Park is home to thousands of years of human history and a rich diversity of plant and animal life, earning it the title of UNESCO World Heritage Site and International Biosphere Reserve.",
+    state: "Kentucky",
     webcams: [{
-      title: "",
+      title: "Green River Bluffs",
+      url: "https://www.nps.gov/featurecontent/ard/webcams/images/maca.jpg",
+      description: "This air quality camera shows the view to the north from the Green River Bluffs trail and also displays current air quality and weather data."
+    }]
+  }, {
+    name: "Mesa Verde",
+    image: "mesa-verde.jpeg",
+    est: "June 29, 1906",
+    description: "For over 700 years, the Ancestral Pueblo people built thriving communities on the mesas and in the cliffs of Mesa Verde. Today, the park protects the rich cultural heritage of 26 Pueblos and Tribes and offers visitors a spectacular window into the past. This World Heritage Site and International Dark Sky Park is home to over a thousand species, including several that live nowhere else on earth.",
+    state: "Colorado",
+    webcams: [{
+      title: "Mesa Verde Dust Cam",
+      url: "http://eldesierto.org/Mverde.jpg",
+      description: "View from the dust monitoring webcam at Mesa Verde National Park. It was installed as part of a multi-agency air quality research project in 2011. The webcam is hosted by the U.S. Geological Survey."
+    }]
+  }, {
+    name: "Mount Rainier",
+    image: "mount-rainier.jpeg",
+    est: "March 2, 1899",
+    description: "Ascending to 14,410 feet above sea level, Mount Rainier stands as an icon in the Washington landscape. An active volcano, Mount Rainier is the most glaciated peak in the contiguous U.S.A., spawning five major rivers. Subalpine wildflower meadows ring the icy volcano while ancient forest cloaks Mount Rainier’s lower slopes. Wildlife abounds in the park’s ecosystems. A lifetime of discovery awaits.",
+    state: "Washington",
+    webcams: [{
+      title: "Longmire",
+      url: "https://www.nps.gov/webcams-mora/longmire.jpg",
+      description: "Looking southwest from the Administration Building toward the road entering Longmire."
+    },{
+      title: "Mountain",
+      url: "https://www.nps.gov/webcams-mora/mountain.jpg",
+      description: "Is the mountain out? What is the weather like at Paradise?"
+    },{
+      title: "East",
+      url: "https://www.nps.gov/webcams-mora/east.jpg",
+      description: "Looking east from the Jackson Visitor Center in Paradise."
+    },{
+      title: "West",
+      url: "https://www.nps.gov/webcams-mora/west.jpg",
+      description: "Looking west from the Jackson Visitor Center in Paradise."
+    },{
+      title: "Visitor Center",
+      url: "https://www.nps.gov/webcams-mora/gh.jpg",
+      description: "A view of the Jackson Visitor Center at Paradise."
+    },{
+      title: "Tatoosh",
+      url: "https://www.nps.gov/webcams-mora/tatoosh.jpg",
+      description: "Looking south towards the Tatoosh Range from Paradise."
+    },{
+      title: "Air Quality",
+      url: "https://www.nps.gov/featurecontent/ard/webcams/images/mora.jpg",
+      description: "Monitors the air quality over the Nisqually Valley from Paradise. Note that ozone and weather measurements are from the weather station at Paradise; visibility readings are from the weather station at Tahoma Woods, near Ashford, WA."
+    }]
+    // TODO come back Summer 2023 and get the summer cams
+  }, {
+    name: "New River Gorge",
+    image: "new-river-gorge.jpeg",
+    est: "December 27, 2020",
+    description: "A rugged, whitewater river flowing northward through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and recreational opportunities.",
+    state: "West Virginia",
+    webcams: [{
+      title: "Canyon Rim Webcam",
+      url: "https://www.nps.gov/webcams-neri/image.jpg",
+      description: "Check the Canyon Rim webcam for the view of the gorge from Canyon Rim Visitor Center."
+    }]
+  }, {
+    name: "North Cascades",
+    image: "north-cascades.jpeg",
+    est: "October 2, 1968",
+    description: "Less than three hours from Seattle, an alpine landscape beckons. Discover communities of life adapted to moisture in the west and recurring fire in the east. Explore jagged peaks crowned by more than 300 glaciers. Listen to cascading waters in forested valleys. Witness a landscape sensitive to the Earth's changing climate. Help steward the ecological heart of the Cascades.",
+    state: "Washington",
+    webcams: [{
+      title: "Newhalem Webcam",
+      url: "https://www.nps.gov/featurecontent/ard/webcams/images/noca.jpg",
+      description: "View still photographs of the Picket Range just outside the North Cascades Visitor Center near Newhalem, Washington"
+    }]
+  }, {
+    name: "Olympic",
+    image: "olympic.jpeg",
+    est: "June 29, 1938",
+    description: "With its incredible range of precipitation and elevation, diversity is the hallmark of Olympic National Park. Encompassing nearly a million acres, the park protects a vast wilderness, thousands of years of human history, and several distinctly different ecosystems, including glacier-capped mountains, old-growth temperate rain forests, and over 70 miles of wild coastline. Come explore!",
+    state: "Washington",
+    webcams: [{
+      title: "Hurricane Ridge",
+      url: "https://www.nps.gov/webcams-olym/southcam.jpg",
+      description: "Looking southwest from Hurricane Ridge, towards Mount Olympus and the Bailey Range."
+    },{
+      title: "Hurricane Ridge Parking Lot",
+      url: "https://www.nps.gov/webcams-olym/northcam.jpg",
+      description: "This view, from the north side of Hurricane Ridge Visitor Center, is rarely obstructed and is often monitored by locals to check the weather or snow pack to determine if conditions are good for a trip up the mountain."
+    },{
+      title: "Kalaloch Beach",
+      url: "http://pixelcaster.com/dnc-kalaloch/kalaloch.jpg",
+      description: "Watch the meandering Kalaloch Creek flow into the Pacific Ocean on this sandy beach. Webcam operated by Kalaloch Lodge."
+    },{
+      title: "Lake Crescent",
+      url: "https://www.nps.gov/featurecontent/ard/webcams/images/olym.jpg",
+      description: "View the weather and conditions at Lake Crescent looking Southeast."
+    },{
+      title: "TODO",
       url: "",
-      description: ""
+      description: "https://forkswa.com/plan-your-visit/webcams/"
+    }]
+  },{
+    name: "Petrified Forest",
+    image: "petrified-forest.jpeg",
+    est: "December 9, 1962",
+    description: "This portion of the Chinle Formation has a large concentration of 225-million-year-old petrified wood. The surrounding Painted Desert features eroded cliffs of red-hued volcanic rock called bentonite. Dinosaur fossils and over 350 Native American sites are also protected in this park.",
+    state: "Arizona",
+    webcams: [{
+      title: "Webcam at the Painted Desert Inn National Historic Landmark",
+      url: "https://webcam.petrifiedforestbookstore.com/webcam.jpg",
+      description: "Live webcam from the historic Painted Desert Inn Historic Landmark at Petrified Forest National Park, looking out over the colorful Painted Desert."
+    }]
+  }, {
+    name: "Rocky Mountain",
+    image: "rocky-mountain.jpeg",
+    est: "January 26, 1915",
+    description: "Rocky Mountain National Park's 415 square miles (265,807 acres) encompasses a spectacular range of mountain environments. From meadows found in the montane life zone to glistening alpine lakes and up to the towering mountain peaks, there is something for everyone to discover. Along the way explore over 300 miles of hiking trails and incredible wildlife viewing.",
+    state: "Colorado",
+    webcams: [{
+      title: "Alpine Visitor Center",
+      url: "https://www.nps.gov/webcams-romo/alpine_visitor_center.jpg",
+      description: "The Alpine Visitor Center, at 11,796’, is the highest elevation visitor center in the National Park System. This webcam reveals views of Mount Chapin, Fall River Canyon, Old Fall River Road, and part of Trail Ridge."
+    }, {
+      title: "Kawuneeche Valley",
+      url: "https://www.nps.gov/webcams-romo/kawuneeche_valley.jpeg",
+      description: "Located on the west side of Rocky Mountain National Park one-half mile from the Grand Lake Entrance Station, Harbison Meadow in the Kawuneeche Valley teems with wildlife and wildflowers. The Never Summer Mountains look down on the headwaters of the Colorado River in this view of the Kawuneeche Valley."
+    }, {
+      title: "Continental Divide",
+      url: "https://www.nps.gov/webcams-romo/glacier_basin.jpeg",
+      description: "Located at Glacier Basin Campground, the Continental Divide Webcam offers a spectacular view of the peaks which rise up from the Bear Lake area. On clear days you will see Thatchtop, Taylor Peak, Otis Peak, Hallett Peak, and Flattop Mountain."
+    }, {
+      title: "Longs Peak",
+      url: "https://www.nps.gov/webcams-romo/longs_peak.jpg",
+      description: "The Longs Peak Webcam is located in the beautiful Tahosa Valley along Hwy 7. The webcam takes you to the tallest mountain in Rocky Mountain National Park. Longs Peak sits at an elevation of 14,259 feet above sea level and is a challenging mountain to climb under the best conditions."
+    }, {
+      title: "Fall River/US 34 Entrance",
+      url: "https://www.nps.gov/webcams-romo/fre.jpg",
+      description: "Fall River Entrance is located just west of Estes Park on US Hwy 34.  This view is looking east from the entrance station, depicting the flow of vehicles entering the park."
+    }, {
+      title: "Beaver Meadows/US 36 Entrance",
+      url: "https://www.nps.gov/webcams-romo/bme.jpeg",
+      description: "Beaver Meadows Entrance is located just west of Estes Park on US Hwy 36.  This view is looking east from the entrance station, depicting the flow of vehicles entering the park."
+    }]
+  }, {
+    name: "Saguaro",
+    image: "saguaro.jpeg",
+    est: "October 14, 1994",
+    description: "Tucson, Arizona is home to the nation's largest cacti. The giant saguaro is the universal symbol of the American west. These majestic plants, found only in a small portion of the United States, are protected by Saguaro National Park, to the east and west of the modern city of Tucson. Here you have a chance to see these enormous cacti, silhouetted by the beauty of a magnificent desert sunset.",
+    state: "Arizona",
+    webcams: [{
+      title: "Rincon Mountain Visitor Center",
+      url: "https://www.nps.gov/common/commonspot/customcf/webcam/inactive_webcam.png",
+      description: "View the picturesque scenery visitors see during their time in the Visitor Center. During the winter months the webcam will focus on the pond for potential wildlife and during the summer months, the webcam will focus on our routine javelina visitors next to the visitor center windows."
+    }]
+  }, {
+    name: "Shenandoah",
+    image: "shenandoah.jpeg",
+    est: "December 26, 1935",
+    description: "Just 75 miles from the bustle of Washington, D.C., Shenandoah National Park is a land bursting with cascading waterfalls, spectacular vistas, fields of wildflowers, and quiet wooded hollows. With over 200,000 acres of protected lands that are haven to deer, songbirds, and black bear, there's so much to explore...and your journey begins right here!",
+    state: "Virginia",
+    webcams: [{
+      title: "Big Meadows",
+      url: "https://www.nps.gov/webcams-shen/bvc2.jpg",
+      description: "Look south from Byrd Visitor Center (mile 51) at this higher elevation."
+    },{
+      title: "Mountain View Cam",
+      url: "https://www.nps.gov/webcams-shen/pinnacles_800.jpg",
+      description: "A view from the Pinnacles area (near mile 36.7) into the valley toward the town of Luray. Use this to check the weather in the park or to track the fall color! Watch as the seasons change from Skyline Drive into the Shenandoah Valley."
+    },{
+      title: "Air Quality Cam",
+      url: "https://www.nps.gov/featurecontent/ard/webcams/images/shen.jpg",
+      description: "Live air quality data from the Pinnacles area looking northwest into the valley."
+    }]
+  }, {
+    name: "Theodore Roosevelt",
+    image: "theodore-roosevelt.jpeg",
+    est: "November 10, 1978",
+    description: "When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.",
+    state: "North Dakota",
+    webcams: [{
+      title: "View of Painted Canyon | Looking North-Northwest",
+      url: "https://www.nps.gov/featurecontent/ard/webcams/images/thro.jpg",
+      description: "As the gently undulating prairie breaks into the bewildering, jagged badlands terrain, the view from this overlook has inspired, amazed, and terrified travelers from the past to the present. Painted Canyon is the first glimpse visitors receive of the Badlands while traveling west on I-94."
+    }]
+  }, {
+    name: "Wrangell-St. Elias",
+    image: "wrangell-st-elias.jpeg",
+    est: "December 2, 1980",
+    description: "Wrangell-St. Elias is a vast national park that rises from the ocean all the way up to 18,008 ft. At 13.2 million acres, the park is the same size as Yellowstone National Park, Yosemite National Park, and Switzerland combined! Within this wild landscape, people continue to live off the land as they have done for centuries. This rugged, beautiful land is filled with opportunities for adventure.",
+    state: "Alaska",
+    webcams: [{
+      title: "Kennecott Mill and Mt. Blackburn",
+      url: "https://www.nps.gov/webcams-wrst/KennecottNorth.jpg",
+      description: "This is the view out a window on the top floor of the General Store in Kennecott, looking to the north. On the right, the historic Kennecott mill building climbs fourteen stories up the mountainside above the railroad trestle, leaching plant and power plant. One hundred years ago, the mine was in full swing and this area was a hive of activity. On the left side of this view, behind the tailing piles, lies the Kennicott Glacier, and above it all, on the distant skyline, looms the blindingly-white, snow-covered Mt. Blackburn -- at 16,390 feet the third-highest peak in the park."
+    },{
+      title: "Kennicott Glacier and the Chugach Range",
+      url: "https://www.nps.gov/webcams-wrst/KennecottSouth.jpg",
+      description: "This view is from the old Dairy Barn in Kennecott, looking south to the Chugach Mountains. The mounds in the foreground are the rock-covered terminus of the Kennicott Glacier. Beyond the glacier and its meltwater lake lie the town of McCarthy and the vast expanse of the Chitina river valley. The scene changes throughout the day depending on weather and lighting: watch for dramatic summer cumulus clouds building over the mountains, rain squalls moving across the valley, windstorms blowing glacial loess off the river bars, and sunlight glinting off bare ice faces on the glacier."
+    }]
+  }, {
+    name: "Yellowstone",
+    image: "yellowstone.jpeg",
+    est: "March 1, 1872",
+    description: "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal and geologic features. Within Yellowstone's 2.2 million acres, visitors have unparalleled opportunities to observe wildlife in an intact ecosystem, explore geothermal areas that contain about half the world’s active geysers, and view geologic wonders like the Grand Canyon of the Yellowstone River.",
+    state: "Wyoming, Montana, Idaho",
+    webcams: [{
+      title: "North Entrance - Roosevelt Arch",
+      url: "https://www.nps.gov/webcams-yell/mammoth_arch.jpg",
+      description: "This webcam is on the park's North Entrance at Gardiner, Montana. It shows current conditions at the entrance with Roosevelt Arch in the background.\n" +
+        "\n" +
+        "The arch became known as Roosevelt Arch after President Theodore Roosevelt, who was vacationing in the park, spoke at the ceremony to lay the cornerstone in 1903. The arch is inscribed with a phrase from the legislation establishing Yellowstone National Park: \"For the benefit and enjoyment of the people.\""
+    },{
+      title: "North Entrance - Electric Peak",
+      url: "https://www.nps.gov/webcams-yell/mammoth_electric.jpg",
+      description: "Morning views from this webcam are spectacular, especially during the winter when the morning sun touches Electric Peak.\n" +
+        "\n" +
+        "Look for wildlife—elk, bison, and pronghorn can be seen grazing here. Occasionally you may see the top of oversize vehicles—RVs, tour buses, and delivery trucks—as they stop at the entrance station."
+    },{
+      title: "Mammoth Hot Springs - Travertine Terraces and Parade Ground",
+      url: "https://www.nps.gov/webcams-yell/mammoth_parade.jpg",
+      description: "Yellowstone is a place of change, and this view highlights a place where change is constant and evident—the travertine terraces of Mammoth Hot Springs. Terraces form when water rises through limestone, which then allows the water to carry high amounts of dissolved calcium carbonate. At the surface, carbon dioxide is released and the calcium carbonate is deposited, forming travertine, the chalky white rock of the terraces. In the foreground are the parade grounds for historic Fort Yellowstone—the focal point of daily life at the fort."
+    },{
+      title: "Mount Washburn - Northeastern View",
+      url: "https://www.nps.gov/webcams-yell/washburn_ne.jpg",
+      description: "At 10,219 feet, Mount Washburn towers above Dunraven Pass between Tower Junction and Canyon Village. A fire lookout stationed at the summit provides a popular destination for day hikers, as well as housing for an employee who watches for and tracks fires throughout the summer. This webcam is located inside the living quarters on the top floor and looks out to the northeast."
+    },{
+      title: "Mount Washburn - Southern View",
+      url: "https://www.nps.gov/webcams-yell/washburn_sw.jpg",
+      description: "This webcam atop Mount Washburn captures a south-facing view of the north-central part of the park. During summer, the webcam is often re-positioned by the fire lookout, and smoke from wildfires burning in the park may be visible."
+    },{
+      title: "West Entrance - Current Conditions at Gate",
+      url: "https://www.nps.gov/webcams-yell/west_gate.jpg",
+      description: "This webcam is on the West Entrance to the park at West Yellowstone, Montana. It shows current conditions at the entrance gate."
+    },{
+      title: "West Entrance - Heading into the Park",
+      url: "https://www.nps.gov/webcams-yell/west_into.jpg",
+      description: "This webcam is on the West Entrance to the park at West Yellowstone, Montana. It shows current conditions leading into the park."
+    },{
+      title: "Old Faithful Geyser",
+      url: "https://www.nps.gov/webcams-yell/oldfaithful.jpg",
+      description: "Old Faithful, named by members of the 1870 Washburn Expedition, was once called “Eternity’s Timepiece” because of the regularity of its eruptions. Despite the myth, this geyser has never erupted at exact hourly intervals, nor is it the largest or most regular geyser in Yellowstone. It does, however, erupt more frequently than any other of the large geysers.\n" +
+        "\n" +
+        "This view of the Old Faithful Geyser is captured from a webcam inside the visitor education center. At this location, time is not measured by a clock, but by this geyser. Visitors make decisions on when to eat, take a tour, interact with exhibits, or watch the visitor center film based on Old Faithful's next eruption."
+    },{
+      title: "Yellowstone Volcano Observatory's Webcam at Yellowstone Lake",
+      url: "https://volcanoes.usgs.gov/vsc/captures/yellowstone/current_ylake.jpg",
+      description: "The camera view is south-southeast over Yellowstone Lake from the cell phone tower near Fishing Bridge. Stevenson Island is visible within the lake on the right. The view extends down the Southeast Arm between the Promontory (low ridge rising from the lake) and the eastern shore. Above the shore, the acid-bleached Brimstone Basin remains white even when the snows have melted. The Absaroka Mountains in the background are composed of approximately 50-million-year old volcanic rocks that long precede the current volcanic activity at Yellowstone, which started about 2.2 million years ago."
+    }]
+  }, {
+    name: "Yosemite",
+    image: "yosemite.jpeg",
+    est: "October 1, 1890",
+    description: "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra. First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
+    state: "California",
+    webcams: [{
+      title: "Yosemite High Sierra",
+      url: "https://pixelcaster.com/yosemite/webcams/sentinel.jpg",
+      description: "This webcam, located at about 8,000 feet in elevation, shows Half Dome and the surrounding high country."
+    },{
+      title: "El Capitan",
+      url: "https://pixelcaster.com/yosemite/webcams/turtleback.jpg",
+      description: "Located on a dome near the Wawona Tunnel, this webcam provides a nice view of Yosemite Valley."
+    },{
+      title: "Tuolumne Meadows (Summer Only)",
+      url: "https://www.nps.gov/common/commonspot/customcf/webcam/inactive_webcam.png",
+      description: "Yosemite Hospitality operates a webcam at the Tuolumne Meadows Store, giving you a glimpse into the high country during the summer. The prominent dome in the distance is Fairview Dome."
+    },{
+      title: "Turtleback Dome & Air Quality",
+      url: "https://www.nps.gov/featurecontent/ard/webcams/images/yose.jpg",
+      description: "This air quality camera shows the view to the west from near Yosemite Valley and also displays current air quality and weather data."
+    },{
+      title: "Badger Pass Ski Area",
+      url: "https://pixelcaster.com/aramark/yosemite-ski.jpg",
+      description: "Yosemite Hospitality operates a webcam at the Badger Pass Ski Area so you can check current conditions and activity."
+    },{
+      title: "Merced River at Happy Isles",
+      url: "https://usgs-nims-images.s3.amazonaws.com/overlay/CA_Merced_River_at_Happy_Isles_Bridge_Yosemite/CA_Merced_River_at_Happy_Isles_Bridge_Yosemite_newest.jpg",
+      description: "From here, you can see the Merced River as it flows past Yosemite Valley's Happy Isles Gaging Station, which the US Geological Survey has maintained for over 100 years."
+    },]
+  }, {
+    name: "Zion",
+    image: "zion.jpeg",
+    est: "November 19, 1919",
+    description: "Follow the paths where native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures.",
+    state: "Utah",
+    webcams: [{
+      title: "Temples And Towers of the Virgin",
+      url: "https://www.nps.gov/webcams-zion/camera2000.jpg",
+      description: "This webcam is located at park headquarters in Zion Canyon and shows one of the park's most famous views, The Temples and Towers of the Virgin."
     }]
   }]
 }
