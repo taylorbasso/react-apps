@@ -19,7 +19,7 @@ export const getRandomWebcam = () => {
 
 export const getNationalParkWebcamData = () => {
   return [{
-    name: "Acadia",
+    name: "Acadia National Park",
     image: "/acadia.jpeg",
     est: "February 26, 1919",
     description: "Acadia National Park protects the natural beauty of the highest rocky headlands along the Atlantic coastline of the United States, an abundance of habitats, and a rich cultural heritage. At 4 million visits a year, it's one of the top 10 most-visited national parks in the United States. Visitors enjoy 27 miles of historic motor roads, 158 miles of hiking trails, and 45 miles of carriage roads.",
@@ -30,7 +30,7 @@ export const getNationalParkWebcamData = () => {
       description: "View from McFarland Hill looking northeast."
     }]
   }, {
-    name: "Arches",
+    name: "Arches National Park",
     image: "/arches.jpeg",
     est: "April 12, 1929",
     description: "The park has over 2,000 natural stone arches, in addition to hundreds of soaring pinnacles, massive fins and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
@@ -41,7 +41,7 @@ export const getNationalParkWebcamData = () => {
       description: "View the entrance road as seen from the Arches Entrance Station. This view looks toward US 191."
     }]
   }, {
-    name: "Big Bend",
+    name: "Big Bend National Park",
     image: "/big-bend.jpeg",
     est: "June 12, 1944",
     description: "There is a place in Far West Texas where night skies are dark as coal and rivers carve temple-like canyons in ancient limestone. Here, at the end of the road, hundreds of bird species take refuge in a solitary mountain range surrounded by weather-beaten desert. Tenacious cactus bloom in sublime southwestern sun, and diversity of species is the best in the country. This magical place is Big Bend.",
@@ -52,7 +52,7 @@ export const getNationalParkWebcamData = () => {
       description: "Big Bend is famous for wide expansive panoramas. The view from Park Headquarters is always changing, and always spectacular. The view is to the Northwest, and updated every 15 minutes. On a clear day, distant peaks over 80 miles away are clearly visible."
     }]
   }, {
-    name: "Canyonlands",
+    name: "Canyonlands National Park",
     image: "canyonlands.jpeg",
     est: "September 12, 1964",
     description: "Canyonlands invites you to explore a wilderness of countless canyons and fantastically formed buttes carved by the Colorado River and its tributaries. Rivers divide the park into four districts: Island in the Sky, The Needles, The Maze, and the rivers themselves. These areas share a primitive desert atmosphere, but each offers different opportunities for sightseeing and adventure.",
@@ -63,7 +63,7 @@ export const getNationalParkWebcamData = () => {
       description: "View from Island in the Sky Visitor Center looking east. This webcam is maintained offsite by the US Geological Survey as part of a dust monitoring project."
     }]
   }, {
-    name: "Crater Lake",
+    name: "Crater Lake National Park",
     image: "crater-lake.jpeg",
     est: "May 22, 1902",
     description: "Crater Lake inspires awe. Native Americans witnessed its formation 7,700 years ago, when a violent eruption triggered the collapse of a tall peak. Scientists marvel at its purity—fed by rain and snow, it’s the deepest lake in the USA and one of the most pristine on Earth. Artists, photographers, and sightseers gaze in wonder at its blue water and stunning setting atop the Cascade Mountain Range.",
@@ -82,7 +82,7 @@ export const getNationalParkWebcamData = () => {
       description: "The Steel Visitor Center at Park Headquarters (elevation 6,450 feet) is currently closed for renovation. (Normally, it's open every day of the year except Christmas.) This view is useful in showing the amount of snow currently on the ground in the park. It can be 10 to 15 feet deep in the late winter and early spring."
     }]
   }, {
-    name: "Denali",
+    name: "Denali National Park",
     image: "denali.jpeg",
     est: "February 26, 1917",
     description: "Denali is six million acres of wild land, bisected by one ribbon of road. Travelers along it see the relatively low-elevation taiga forest give way to high alpine tundra and snowy mountains, culminating in North America's tallest peak, 20,310' Denali. Wild animals large and small roam un-fenced lands, living as they have for ages. Solitude, tranquility and wilderness await.",
@@ -97,7 +97,7 @@ export const getNationalParkWebcamData = () => {
       url: "https://www.nps.gov/featurecontent/ard/webcams/images/dena.jpg"
     }]
   }, {
-    name: "Glacier",
+    name: "Glacier National Park",
     image: "/glacier.jpeg",
     est: "May 11, 1910",
     description: "A showcase of melting glaciers, alpine meadows, carved valleys, and spectacular lakes. With over 700 miles of trails, Glacier is a paradise for adventurous visitors seeking wilderness steeped in human history. Relive the days of old through historic chalets, lodges, and the famous Going-to-the-Sun Road.",
@@ -160,7 +160,7 @@ export const getNationalParkWebcamData = () => {
       description: "This view from near the campground in Two Medicine shows how dominant Sinopah Mountain is on the landscape there. To the left is Painted Tepee Mountain and to the right is Mount Helen. Once a primary stop on all train and horseback trips in the park, the opening of the Going-to-the-Sun Road in the 1930s shifted visitation to other parts of the park. While not as busy as some locations today, it is still crowded and visitors are advised to arrive early to find parking."
     }]
   }, {
-    name: "Glacier Bay",
+    name: "Glacier Bay National Park",
     image: "glacier-bay.jpeg",
     est: "December 2, 1980",
     description: "Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glacier Bay National Park is a highlight of Alaska's Inside Passage and part of a 25-million acre World Heritage Site—one of the world’s largest international protected areas. From sea to summit, Glacier Bay offers limitless opportunities for adventure and inspiration.",
@@ -183,7 +183,7 @@ export const getNationalParkWebcamData = () => {
       description: "The Tlingit Trail follows the shoreline of Bartlett Cove from the Huna Tribal House to the Visitor Information Station and the public-use dock.  Interpretive signs explain Tlingit culture and common native plants.  A variety of vessels from around the world dock here, including an occasional floatplane.  On a clear day the high peaks of the Beartrack Mountains can be seen rising above the forested Beardslee Islands in the distance."
     }]
   }, {
-    name: "Grand Canyon",
+    name: "Grand Canyon National Park",
     image: "grand-canyon.jpeg",
     est: "February 26, 1919",
     description: "Grand Canyon National Park, in Northern Arizona, encompasses 278 miles (447 km) of the Colorado River and adjacent uplands. Located on ancestral homeland of 11 Associated Tribes, Grand Canyon is one of the most spectacular examples of erosion anywhere in the world—unmatched in the incomparable vistas it offers visitors from the rim.",
@@ -206,7 +206,7 @@ export const getNationalParkWebcamData = () => {
       description: "Bright Angel Trail starts into the canyon from Kolb Studio in Grand Canyon Village. For more than 60 years, mule trips descending into the canyon would pose here for group photos. Bright Angel Trail is the park’s most popular hiking trail. Verify that the time and date of the picture is current (upper left in the image) Camera is hosted by Grand Canyon Conservancy."
     }]
   }, {
-    name: "Grand Teton",
+    name: "Grand Teton National Park",
     image: "grand-teton.jpeg",
     est: "February 26, 1929",
     description: "Rising above a scene rich with extraordinary wildlife, pristine lakes, and alpine terrain, the Teton Range stands as a monument to the people who fought to protect it. These are mountains of the imagination. Mountains that led to the creation of Grand Teton National Park where you can explore over two hundred miles of trails, float the Snake River, and enjoy the serenity of this remarkable place.",
@@ -217,7 +217,7 @@ export const getNationalParkWebcamData = () => {
       description: "View the Teton Range from the east side of Grand Teton National Park. The air quality station includes a webcam and other instruments that measure ozone and weather data. You can also get an estimate of how far you can see based on air quality!"
     }]
   }, {
-    name: "Great Smoky Mountains",
+    name: "Great Smoky Mountains National Park",
     image: "great-smoky.jpeg",
     est: "June 15, 1934",
     description: "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park.",
@@ -236,7 +236,7 @@ export const getNationalParkWebcamData = () => {
       title: "Clingmans Dome", url: "https://www.nps.gov/featurecontent/ard/webcams/images/grcd.jpg"
     }]
   }, {
-    name: "Guadalupe Mountains",
+    name: "Guadalupe Mountains National Park",
     image: "guadalupe.jpeg",
     est: "October 15, 1966",
     description: "Come experience mountains and canyons, desert and dunes, night skies and spectacular vistas within a place unlike any other. Guadalupe Mountains National Park protects the world's most extensive Permian fossil reef, the four highest peaks in Texas, an environmentally diverse collection of flora and fauna, and the stories of lives shaped through conflict, cooperation and survival.",
@@ -255,7 +255,7 @@ export const getNationalParkWebcamData = () => {
       description: "View looking east from Dell City to the western escarpment of the Guadalupe Mountains."
     }]
   }, {
-    name: "Haleakala",
+    name: "Haleakala National Park",
     image: "haleakala.jpeg",
     est: "July 1, 1961",
     description: "This special place vibrates with stories of ancient and modern Hawaiian culture and protects the bond between the land and its people. The park also cares for endangered species, some of which exist nowhere else. Come visit this special place - renew your spirit amid stark volcanic landscapes and sub-tropical rain forest with an unforgettable hike through the backcountry.",
@@ -266,7 +266,7 @@ export const getNationalParkWebcamData = () => {
       description: "Check out the latest viewing conditions of Haleakalā Crater via our webcam at Puʻuʻulaʻula located at the summit."
     }]
   }, {
-    name: "Hawai‘i Volcanoes",
+    name: "Hawai‘i Volcanoes National Park",
     image: "hawaii-volcanoes.jpeg",
     est: "August 1, 1916",
     description: "Hawai‘i Volcanoes National Park protects some of the most unique geological, biological, and cherished cultural landscapes in the world. Extending from sea level to 13,680 feet, the park encompasses the summits of two of the world's most active volcanoes - Kīlauea and Mauna Loa - and is a designated International Biosphere Reserve and UNESCO World Heritage Site.",
@@ -313,7 +313,7 @@ export const getNationalParkWebcamData = () => {
       description: "This image is from a research camera positioned on a cone in Mauna Loa's Southwest Rift Zone in Hawaiʻi Volcanoes National Park. The camera looks northeast (upslope), focusing on the middle part of the Southwest Rift Zone. The volcano's summit is at upper right."
     }]
   }, {
-    name: "Isle Royale",
+    name: "Isle Royale National Park",
     image: "isle-royale.jpeg",
     est: "April 3, 1940",
     description: "Explore a rugged, isolated island far from our connected communities. Isle Royale offers adventures for backpackers, hikers, boaters, paddlers, and divers. Cross Lake Superior and make a commitment: Become a part of this island, and let it become a part of you. Find peace and refuge in island wilderness – because Isle Royale, in turn, finds refuge in us. Help Isle Royale stay wild.",
@@ -340,7 +340,7 @@ export const getNationalParkWebcamData = () => {
       description: "Tobin Harbor is located on the northeast end of Isle Royale, near Rock Harbor. In the early 20th century, it was a popular summer haven for vacationers. Visitors today enjoy the peaceful paddling and boating opportunities it offers. The webcam is active only during the summer months when power is available to it (typically from the beginning of May until late September)."
     }]
   }, {
-    name: "Joshua Tree",
+    name: "Joshua Tree National Park",
     image: "joshua-tree.jpeg",
     est: "October 31, 1994",
     description: "Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park. A fascinating variety of plants and animals make their homes in a land sculpted by strong winds and occasional torrents of rain. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California.",
@@ -351,7 +351,7 @@ export const getNationalParkWebcamData = () => {
       description: "The view from atop Belle Mountain looking Southeast."
     }]
   }, {
-    name: "Sequoia and Kings Canyon",
+    name: "Sequoia and Kings Canyon National Park",
     image: "sequoia-kings.jpeg",
     est: "March 4, 1940",
     description: "Huge mountains, rugged foothills, deep canyons, vast caverns, and the world’s largest trees exemplify the diversity of landscapes, life, and beauty here. Explore these pages to learn about the plants and animals here and the threats they face. Our ancient giant sequoias may seem invincible, but they, too are vulnerable.",
@@ -362,7 +362,7 @@ export const getNationalParkWebcamData = () => {
       description: "This webcam looks west from the edge of the Giant Forest. Part of a network of air-quality-monitoring sites, it often shows effects of air pollution such as visibility impairment."
     }]
   }, {
-    name: "Lassen Volcanic",
+    name: "Lassen Volcanic National Park",
     image: "lassen.jpeg",
     est: "August 9, 1916",
     description: "Lassen Volcanic National Park is home to steaming fumaroles, meadows freckled with wildflowers, clear mountain lakes, and numerous volcanoes. Jagged peaks tell the story of its eruptive past while hot water continues to shape the land.",
@@ -373,7 +373,7 @@ export const getNationalParkWebcamData = () => {
       description: "This is the view looking north from the Kohm Yah-mah-nee Visitor Center at Lassen Volcanic National Park. The peak to the left is Mt. Diller and Pilot Pinnacle sits to its right. On cool days, it is possible to see steam rising from the Sulphur Works hydrothermal area."
     }]
   }, {
-    name: "Mammoth Cave",
+    name: "Mammoth Cave National Park",
     image: "mammoth-cave.jpeg",
     est: "July 1, 1941",
     description: "Rolling hills, deep river valleys, and the world's longest known cave system. Mammoth Cave National Park is home to thousands of years of human history and a rich diversity of plant and animal life, earning it the title of UNESCO World Heritage Site and International Biosphere Reserve.",
@@ -384,7 +384,7 @@ export const getNationalParkWebcamData = () => {
       description: "This air quality camera shows the view to the north from the Green River Bluffs trail and also displays current air quality and weather data."
     }]
   }, {
-    name: "Mesa Verde",
+    name: "Mesa Verde National Park",
     image: "mesa-verde.jpeg",
     est: "June 29, 1906",
     description: "For over 700 years, the Ancestral Pueblo people built thriving communities on the mesas and in the cliffs of Mesa Verde. Today, the park protects the rich cultural heritage of 26 Pueblos and Tribes and offers visitors a spectacular window into the past. This World Heritage Site and International Dark Sky Park is home to over a thousand species, including several that live nowhere else on earth.",
@@ -395,7 +395,7 @@ export const getNationalParkWebcamData = () => {
       description: "View from the dust monitoring webcam at Mesa Verde National Park. It was installed as part of a multi-agency air quality research project in 2011. The webcam is hosted by the U.S. Geological Survey."
     }]
   }, {
-    name: "Mount Rainier",
+    name: "Mount Rainier National Park",
     image: "mount-rainier.jpeg",
     est: "March 2, 1899",
     description: "Ascending to 14,410 feet above sea level, Mount Rainier stands as an icon in the Washington landscape. An active volcano, Mount Rainier is the most glaciated peak in the contiguous U.S.A., spawning five major rivers. Subalpine wildflower meadows ring the icy volcano while ancient forest cloaks Mount Rainier’s lower slopes. Wildlife abounds in the park’s ecosystems. A lifetime of discovery awaits.",
@@ -431,7 +431,7 @@ export const getNationalParkWebcamData = () => {
     }]
     // TODO come back Summer 2023 and get the summer cams
   }, {
-    name: "New River Gorge",
+    name: "New River Gorge National Park",
     image: "new-river-gorge.jpeg",
     est: "December 27, 2020",
     description: "A rugged, whitewater river flowing northward through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and recreational opportunities.",
@@ -442,7 +442,7 @@ export const getNationalParkWebcamData = () => {
       description: "Check the Canyon Rim webcam for the view of the gorge from Canyon Rim Visitor Center."
     }]
   }, {
-    name: "North Cascades",
+    name: "North Cascades National Park",
     image: "north-cascades.jpeg",
     est: "October 2, 1968",
     description: "Less than three hours from Seattle, an alpine landscape beckons. Discover communities of life adapted to moisture in the west and recurring fire in the east. Explore jagged peaks crowned by more than 300 glaciers. Listen to cascading waters in forested valleys. Witness a landscape sensitive to the Earth's changing climate. Help steward the ecological heart of the Cascades.",
@@ -453,7 +453,7 @@ export const getNationalParkWebcamData = () => {
       description: "View still photographs of the Picket Range just outside the North Cascades Visitor Center near Newhalem, Washington"
     }]
   }, {
-    name: "Olympic",
+    name: "Olympic National Park",
     image: "olympic.jpeg",
     est: "June 29, 1938",
     description: "With its incredible range of precipitation and elevation, diversity is the hallmark of Olympic National Park. Encompassing nearly a million acres, the park protects a vast wilderness, thousands of years of human history, and several distinctly different ecosystems, including glacier-capped mountains, old-growth temperate rain forests, and over 70 miles of wild coastline. Come explore!",
@@ -480,7 +480,7 @@ export const getNationalParkWebcamData = () => {
       description: "https://forkswa.com/plan-your-visit/webcams/"
     }]
   },{
-    name: "Petrified Forest",
+    name: "Petrified Forest National Park",
     image: "petrified-forest.jpeg",
     est: "December 9, 1962",
     description: "This portion of the Chinle Formation has a large concentration of 225-million-year-old petrified wood. The surrounding Painted Desert features eroded cliffs of red-hued volcanic rock called bentonite. Dinosaur fossils and over 350 Native American sites are also protected in this park.",
@@ -491,7 +491,7 @@ export const getNationalParkWebcamData = () => {
       description: "Live webcam from the historic Painted Desert Inn Historic Landmark at Petrified Forest National Park, looking out over the colorful Painted Desert."
     }]
   }, {
-    name: "Rocky Mountain",
+    name: "Rocky Mountain National Park",
     image: "rocky-mountain.jpeg",
     est: "January 26, 1915",
     description: "Rocky Mountain National Park's 415 square miles (265,807 acres) encompasses a spectacular range of mountain environments. From meadows found in the montane life zone to glistening alpine lakes and up to the towering mountain peaks, there is something for everyone to discover. Along the way explore over 300 miles of hiking trails and incredible wildlife viewing.",
@@ -522,7 +522,7 @@ export const getNationalParkWebcamData = () => {
       description: "Beaver Meadows Entrance is located just west of Estes Park on US Hwy 36.  This view is looking east from the entrance station, depicting the flow of vehicles entering the park."
     }]
   }, {
-    name: "Saguaro",
+    name: "Saguaro National Park",
     image: "saguaro.jpeg",
     est: "October 14, 1994",
     description: "Tucson, Arizona is home to the nation's largest cacti. The giant saguaro is the universal symbol of the American west. These majestic plants, found only in a small portion of the United States, are protected by Saguaro National Park, to the east and west of the modern city of Tucson. Here you have a chance to see these enormous cacti, silhouetted by the beauty of a magnificent desert sunset.",
@@ -533,7 +533,7 @@ export const getNationalParkWebcamData = () => {
       description: "View the picturesque scenery visitors see during their time in the Visitor Center. During the winter months the webcam will focus on the pond for potential wildlife and during the summer months, the webcam will focus on our routine javelina visitors next to the visitor center windows."
     }]
   }, {
-    name: "Shenandoah",
+    name: "Shenandoah National Park",
     image: "shenandoah.jpeg",
     est: "December 26, 1935",
     description: "Just 75 miles from the bustle of Washington, D.C., Shenandoah National Park is a land bursting with cascading waterfalls, spectacular vistas, fields of wildflowers, and quiet wooded hollows. With over 200,000 acres of protected lands that are haven to deer, songbirds, and black bear, there's so much to explore...and your journey begins right here!",
@@ -552,7 +552,7 @@ export const getNationalParkWebcamData = () => {
       description: "Live air quality data from the Pinnacles area looking northwest into the valley."
     }]
   }, {
-    name: "Theodore Roosevelt",
+    name: "Theodore Roosevelt National Park",
     image: "theodore-roosevelt.jpeg",
     est: "November 10, 1978",
     description: "When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.",
@@ -563,7 +563,7 @@ export const getNationalParkWebcamData = () => {
       description: "As the gently undulating prairie breaks into the bewildering, jagged badlands terrain, the view from this overlook has inspired, amazed, and terrified travelers from the past to the present. Painted Canyon is the first glimpse visitors receive of the Badlands while traveling west on I-94."
     }]
   }, {
-    name: "Wrangell-St. Elias",
+    name: "Wrangell-St. Elias National Park",
     image: "wrangell-st-elias.jpeg",
     est: "December 2, 1980",
     description: "Wrangell-St. Elias is a vast national park that rises from the ocean all the way up to 18,008 ft. At 13.2 million acres, the park is the same size as Yellowstone National Park, Yosemite National Park, and Switzerland combined! Within this wild landscape, people continue to live off the land as they have done for centuries. This rugged, beautiful land is filled with opportunities for adventure.",
@@ -578,7 +578,7 @@ export const getNationalParkWebcamData = () => {
       description: "This view is from the old Dairy Barn in Kennecott, looking south to the Chugach Mountains. The mounds in the foreground are the rock-covered terminus of the Kennicott Glacier. Beyond the glacier and its meltwater lake lie the town of McCarthy and the vast expanse of the Chitina river valley. The scene changes throughout the day depending on weather and lighting: watch for dramatic summer cumulus clouds building over the mountains, rain squalls moving across the valley, windstorms blowing glacial loess off the river bars, and sunlight glinting off bare ice faces on the glacier."
     }]
   }, {
-    name: "Yellowstone",
+    name: "Yellowstone National Park",
     image: "yellowstone.jpeg",
     est: "March 1, 1872",
     description: "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal and geologic features. Within Yellowstone's 2.2 million acres, visitors have unparalleled opportunities to observe wildlife in an intact ecosystem, explore geothermal areas that contain about half the world’s active geysers, and view geologic wonders like the Grand Canyon of the Yellowstone River.",
@@ -627,7 +627,7 @@ export const getNationalParkWebcamData = () => {
       description: "The camera view is south-southeast over Yellowstone Lake from the cell phone tower near Fishing Bridge. Stevenson Island is visible within the lake on the right. The view extends down the Southeast Arm between the Promontory (low ridge rising from the lake) and the eastern shore. Above the shore, the acid-bleached Brimstone Basin remains white even when the snows have melted. The Absaroka Mountains in the background are composed of approximately 50-million-year old volcanic rocks that long precede the current volcanic activity at Yellowstone, which started about 2.2 million years ago."
     }]
   }, {
-    name: "Yosemite",
+    name: "Yosemite National Park",
     image: "yosemite.jpeg",
     est: "October 1, 1890",
     description: "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra. First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
@@ -658,7 +658,7 @@ export const getNationalParkWebcamData = () => {
       description: "From here, you can see the Merced River as it flows past Yosemite Valley's Happy Isles Gaging Station, which the US Geological Survey has maintained for over 100 years."
     },]
   }, {
-    name: "Zion",
+    name: "Zion National Park",
     image: "zion.jpeg",
     est: "November 19, 1919",
     description: "Follow the paths where native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures.",
